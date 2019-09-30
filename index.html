@@ -96,22 +96,26 @@
         }
 
         .centered {
-            width:  250px;
-            height: 250px;
+            width: 400px;
             text-align: center
         }
 
         .centered img {
-            width: 250px;
-            max-width: 250px;
-            height: 250px;
-            max-height: 250px;
+            width: 200px;
+            max-width: 200px;
+            height: 200px;
+            max-height: 200px;
         }
 
-        .centered h2 {
-            font-size: 18px;
-            margin-top: 5px;
-            margin-bottom: 5px;
+        .centered > * {
+            margin-top: 12px;
+        }
+
+        .centered p {
+            font-size: 1.12rem;
+            line-height: 1.34rem;
+            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
         .centered h2 a {
@@ -120,7 +124,7 @@
             text-decoration: none;
         }
 
-        .centered h2 a:hover {
+        .centered p a:hover {
             color: #000000;
         }
     </style>
@@ -140,9 +144,10 @@
 <body>
     <div id="container">
         <div class="centered">
-            <h2><a target="_blank" href="https://github.com/silvaangelo">What am i doing?</a></h2>
-            <img src="https://avatars1.githubusercontent.com/u/18298628?s=460&v=4" alt="Avatar">
-            <h2><a target="_blank" href="https://www.linkedin.com/in/angelorrsilva/">Contact me.</a></h2>
+            <img src="https://avatars1.githubusercontent.com/u/18298628" alt="Avatar">
+            <p>Olá, meu nome é Angelo, trabalho com desenvolvimento de software e atualmente estou morando em Sorocaba, SP. No momento estou trabalhando na <a target="_blank" href="https://www.eduzz.com/">Eduzz</a> uma plataforma gigante voltada ao mercado de marketing digital.</p>
+            <p>Gosto muito de trabalhar, estudar e falar sobre software, tento estar sempre atualizado e em sintonia com a comunidade de tecnologia no interior de SP participando de eventos e trocando uma ideia com a galera.</p>
+            <a id="contact-link" target="_blank" href="https://www.linkedin.com/in/angelorrsilva/">Me contate.</a>
         </div>
     </div>
 </body>
