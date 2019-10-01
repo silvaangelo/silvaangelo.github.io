@@ -97,14 +97,28 @@
 
         .centered {
             width: 400px;
-            text-align: center
+            text-align: center;
+            display: flex;
+            align-content: center;
+            align-items: center;
+            flex-direction: column;
         }
 
-        .centered img {
+        #avatar-wrapper {
+            text-align: center;
             width: 200px;
             max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 15px;
             height: 200px;
             max-height: 200px;
+            overflow: hidden;
+        }
+
+        #avatar-wrapper img {
+            width: 100%;
+            text-align: center;
+            height: 100%;
         }
 
         .centered > * {
@@ -114,8 +128,8 @@
         .centered p, .centered a {
             font-size: 1.14rem;
             line-height: 1.38rem;
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
     </style>
 
@@ -134,7 +148,10 @@
 <body>
     <div id="container">
         <div class="centered">
-            <img src="https://avatars1.githubusercontent.com/u/18298628" alt="Avatar">
+            <div id="avatar-wrapper">
+                <img src="https://avatars1.githubusercontent.com/u/18298628" alt="Avatar">
+            </div>
+            
             <p>Olá, meu nome é Angelo, trabalho com desenvolvimento de software e atualmente estou morando em Sorocaba, SP. No momento estou trabalhando na <a target="_blank" href="https://www.eduzz.com/">Eduzz</a>, uma plataforma gigante voltada ao mercado de marketing digital.</p>
             <p>Gosto muito de trabalhar, estudar e falar sobre software, tento estar sempre atualizado e em sintonia com a comunidade de tecnologia no interior de SP participando de eventos e trocando uma ideia com a galera.</p>
             <a id="contact-link" target="_blank" href="https://www.linkedin.com/in/angelorrsilva/">Me contate.</a>
